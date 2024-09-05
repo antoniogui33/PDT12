@@ -154,8 +154,140 @@ const servidor = http.createServer((pedido, resposta) => {
 
     //A partir da linha 156, entramos na area de CSS
 
-    if (pedido.url === "/css/index.css") {
-        fs.readFile(path.resolve(__dirname, '../frontend/view/css/index.css'), (erro, dadosDoArquivo) => {
+    if (pedido.url === "/css/global.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/global.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/cultura.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/cultura.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/economia.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/economia.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/educacao.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/educacao.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/exercito.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/exercito.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/gestao.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/gestao.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/meioAmbiente.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/meioAmbiente.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/politicaExterna.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/politicaExterna.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/politicaInterna.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/politicaInterna.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/qualidadeDeVida.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/qualidadeDeVida.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/saude.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/saude.css'), (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/css' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+    if (pedido.url === "/css/seguranca.css") {
+        fs.readFile(path.resolve(__dirname, '../frontend/view/css/seguranca.css'), (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
                 resposta.end('Desculpe, não foi possivel encontrar sua pesquisa, recarregue a pagína ou tente novamente mais tarde!');
